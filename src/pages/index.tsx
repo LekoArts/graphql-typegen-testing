@@ -1,5 +1,6 @@
 import * as React from "react"
 import { graphql, PageProps } from "gatsby"
+import Info from "../components/info"
 import "../layout.css"
 
 const pageStyles = {
@@ -20,6 +21,7 @@ const IndexPage = ({ data }: PageProps) => {
       </ol>
       <p>Site title: TODO</p>
       <p>Description: TODO</p>
+      <Info buildTime={data.site?.buildTime} />
       <hr />
       <p>Query Result:</p>
       <pre>
@@ -39,6 +41,7 @@ export const query = graphql`
       siteMetadata {
         title
       }
+      ...SiteInformation
     }
   }
 `
