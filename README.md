@@ -5,7 +5,7 @@ Test project for [GraphQL TypeScript Generation RFC](https://github.com/gatsbyjs
 ## Instructions
 
 1. If you use VSCode install the [GraphQL Plugin](https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql)
-1. Install dependencies with `npm install` / `yarn`
+1. Install dependencies with `npm install --legacy-peer-deps` / `yarn`
 1. Start the development server with `npm run develop` / `yarn develop`
 1. Follow the instructions on the index page at `localhost:8000`
 
