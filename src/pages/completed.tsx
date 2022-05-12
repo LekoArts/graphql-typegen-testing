@@ -19,8 +19,8 @@ const CompletedPage = ({ data }: PageProps<Queries.CompletedPageQuery>) => {
         <li>(If you use VSCode): Position your cursor inside the <code>siteMetadata</code> field of the page query and use autocompletion to check which other fields are available.</li>
         <li>Query the new key <code>description</code> on <code>siteMetadata</code> and display it on this page.</li>
       </ol>
-      <p>Site title: {data.site?.siteMetadata?.title}</p>
-      <p>Description: {data.site?.siteMetadata?.description}</p>
+      <p>Site title: {data.site?.siteMetadata.title}</p>
+      <p>Description: {data.site?.siteMetadata.description}</p>
       <Info buildTime={data.site?.buildTime} />
       <hr />
       <p>Query Result:</p>
